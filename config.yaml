@@ -38,7 +38,7 @@ JMeter:
   Plugins:
     Default:
       - DummySampler
-      - UDP
+      #- UDP
       - SeleniumWebDriver
       - Visualizer
     Custom:

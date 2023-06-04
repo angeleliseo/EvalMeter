@@ -19,8 +19,10 @@ class PluginFactory:
         Adds custom plugin mappings to default plugins dict
         """
         self.update_plugin_list()
-        if self.custom_plugins:
-            self.plugins.update(self.custom_plugins)
+        print(self.custom_plugins)
+        if self.custom_plugins is not None:
+            self.plugins.update(self.custom_plugins)  #<----
+            print(self.plugins)
 
     def update_plugin_list(self):
         """
@@ -29,6 +31,7 @@ class PluginFactory:
         custom_plugin_list = []
         if self.custom_plugins:
             custom_plugin_list = [*self.custom_plugins]
+            print(custom_plugin_list)
 
         self.plugins_list = list(set(self.plugins_list + custom_plugin_list))
 
