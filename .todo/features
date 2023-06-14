@@ -19,4 +19,10 @@ Following are the most frequently used ones:
 3. Check Test Plan Naming Convention. Expression: ret.jmeterTestPlan.hashTree.TestPlan["testname"] (Regular expresion based on inputs)
 4. Check it has at least one ThreadGroup. Expression =  len(ret.jmeterTestPlan.hashTree.hashTree.ThreadGroup) |  "ThreadGroup" in  dir(ret.jmeterTestPlan.hashTree.hashTree) 
 5. Check if it follows naming convention. Expression = ret.jmeterTestPlan.hashTree.hashTree.ThreadGroup["testname"] (regular expresion based on inputs) for TG in ret.jmeterTestPlan.hashTree.hashTree.ThreadGroup
-6. 
+6. it has at least one HTTTP sampler.  Expression = 
+
+-----
+1. We are going to start with the inputs in this classes  (Config Reader, Config File, Script reader)
+  - Script reader
+  - Config File
+  - Config Reader
